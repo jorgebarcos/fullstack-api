@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-api",
+  "version": "1.0.0",
+  "description": "Backend en Mongo y Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Jorge Alberto Barcos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorgebarcos/fullstack-api/issues"
+  },
+  "homepage": "https://github.com/jorgebarcos/fullstack-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

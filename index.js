@@ -1,12 +1,17 @@
 const express = require('express');
 const conectarDB = require('./config/db');
 const routes = require('./routes');
+const bodyParser = require('body-parser');
 
 // Crear el servidor
 const app = express();
 
 // Conectar a la base de datos
 conectarDB();
+
+// Habilitar el body-parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 // habilitar routing
 app.use('/',  routes());

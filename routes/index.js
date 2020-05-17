@@ -14,7 +14,11 @@ module.exports = function() {
     // Obtiene todos los registros de pacientes en la BD
     router.get('/pacientes', 
         pacienteController.obtenerPacientes
-    
+    )
+
+    // Obtiene un paciente en especifico (ID)
+    router.get('/pacientes/:id',
+        pacienteController.obtenerPaciente
     )
 
 

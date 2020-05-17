@@ -50,3 +50,14 @@ exports.actualizarPaciente = async (req, res, next) => {
         next();
     }
 }
+
+// Elimina un registro por su ID
+exports.eliminarPaciente = async (req, res, next) => {
+    try {
+        await Paciente.findOneAndDelete({_id : req.params.id});
+        res.json({mensaje: 'El paciente fue eliminado'});
+    } catch (error) {
+        console.log(error);
+        next();
+    }
+}

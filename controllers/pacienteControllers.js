@@ -14,3 +14,14 @@ exports.nuevoCliente = async (req, res, next ) => {
         next();
     }
 }
+
+// Obtiene todos los pacientes
+
+exports.obtenerPacientes = async (req, res, next) => {
+    try {
+        const pacientes = await Paciente.find({});
+        res.json(pacientes);
+    } catch (error) {
+    next();
+    }
+}

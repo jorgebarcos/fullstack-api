@@ -22,6 +22,10 @@ const pacientesSchema = new Schema({
     hora: {
         type: String,
         trim: true 
+    },
+    sintomas: {
+        type: String,
+        trim: true
     }
 });
 
